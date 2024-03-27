@@ -1,0 +1,12 @@
+<div>
+    <h1>Exercise 1</h1>
+    <h2>ngClass</h2>
+    <button (click)="toggleActive()">Toggle active</button>
+    <br>
+    <span [ngClass]="{redText: active}">Hello</span>
+    <br><br>
+    <span>active: {{ active }}</span>
+
+    <h2>ngStyle</h2>
+    <span [ngStyle]="{color: active ? 'red' : ''}">Hello</span>
+</div>
