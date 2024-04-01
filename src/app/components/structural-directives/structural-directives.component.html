@@ -1,0 +1,25 @@
+<div>
+    <h1>Exercise 2</h1>
+    <h2>ngFor</h2>
+    <ul>
+        <li *ngFor="let item of list">{{item}}</li>
+    </ul>
+
+    <h2>ngIf</h2>
+    <ul>
+        <div *ngFor="let item of list">
+            <li *ngIf="item !== 'B'">{{item}}</li>
+        </div>
+    </ul>
+
+    <h2>ngSwitch</h2>
+    <ul>
+        <div *ngFor="let item of list">
+            <div [ngSwitch]="item">
+                <li *ngSwitchCase="'A'">1</li>
+                <li *ngSwitchCase="'B'">2</li>
+                <li *ngSwitchCase="'C'">3</li>
+            </div>
+        </div>
+    </ul>
+</div>
