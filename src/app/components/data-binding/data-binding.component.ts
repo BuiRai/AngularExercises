@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class DataBindingComponent {
   protected text: string = 'Hello World';
-  protected textInput: string = 'Hello World';
+  protected textInput: string = 'Hello world 2';
 
   displayAlert() {
     alert('I was triggered by an event');
