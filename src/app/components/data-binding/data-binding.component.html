@@ -1,0 +1,10 @@
+<h1>Event binding</h1>
+<button (click)="displayAlert()">Click me</button>
+
+<h2>One way data binding</h2>
+<input type="text" [value]="text">
+
+<h1>Two way data binding</h1>
+<span>{{textInput}}</span>
+<br>
+<input type="text" [(ngModel)]="textInput">
